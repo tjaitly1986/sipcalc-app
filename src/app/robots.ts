@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "",
     },
-    sitemap: "https://sipcalc.app/sitemap.xml",
+    sitemap: "https://sipcalcapp.vercel.app/sitemap.xml",
   };
 }

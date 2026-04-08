@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "mutual fund investment",
     "financial goal planner",
   ],
-  metadataBase: new URL("https://sipcalc.app"),
+  metadataBase: new URL("https://sipcalcapp.vercel.app"),
   openGraph: {
     title: "SIP Calculator India | Step-Up SIP, Goal Planner & Investment Returns",
     description:

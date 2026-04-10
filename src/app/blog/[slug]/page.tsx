@@ -611,6 +611,10 @@ Your financial future is in your hands. Make it count!
   },
 };
 
+export function generateStaticParams() {
+  return Object.keys(blogContent).map((slug) => ({ slug }));
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = blogContent[slug];

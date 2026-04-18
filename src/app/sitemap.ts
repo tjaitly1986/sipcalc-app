@@ -1,46 +1,68 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://sipcalcapp.vercel.app";
-
 export default function sitemap(): MetadataRoute.Sitemap {
+  const BASE_URL = "https://sipcalcapp.vercel.app";
+
   return [
     {
-      url: BASE_URL,
+      url: "https://sipcalcapp.vercel.app",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: `${BASE_URL}/blog`,
+      url: "https://sipcalcapp.vercel.app/blog",
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/blog/sip-calculator-guide`,
-      lastModified: new Date("2026-04-08"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/blog/step-up-sip-benefits`,
-      lastModified: new Date("2026-04-08"),
+      url: "https://sipcalcapp.vercel.app/blog/financial-goal-planning",
+      lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.7,
     },
     {
-      url: `${BASE_URL}/blog/sip-vs-lumpsum`,
-      lastModified: new Date("2026-04-08"),
+      url: "https://sipcalcapp.vercel.app/blog/sip-calculator-guide",
+      lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.7,
     },
     {
-      url: `${BASE_URL}/blog/financial-goal-planning`,
-      lastModified: new Date("2026-04-08"),
+      url: "https://sipcalcapp.vercel.app/blog/sip-vs-lumpsum",
+      lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.7,
+    },
+    {
+      url: "https://sipcalcapp.vercel.app/blog/step-up-sip-benefits",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/terms`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
     },
   ];
 }

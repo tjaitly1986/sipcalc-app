@@ -69,6 +69,11 @@ gtag('js', new Date());
 gtag('config', 'G-4N56LRGCZ5');`,
           }}
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8077190120013612"
+          crossOrigin="anonymous"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#16a34a" />
